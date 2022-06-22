@@ -1,0 +1,24 @@
+{
+  "name": "india_places",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epicX67/india_places.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epicX67/india_places/issues"
+  },
+  "homepage": "https://github.com/epicX67/india_places#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
