@@ -1,7 +1,7 @@
 {
   "name": "india_places",
   "version": "1.0.0",
-  "description": "",
+  "description": "List of recognizable indian places including pincode",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
@@ -12,8 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/epicX67/india_places.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "india",
+    "places",
+    "towns",
+    "india_places",
+    "india_places_by_pincode"
+  ],
+  "author": "epicX67",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/epicX67/india_places/issues"
