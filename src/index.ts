@@ -1,6 +1,6 @@
-import stateMap from "./data/state/map.json";
-import districtMap from "./data/district/map.json";
-import placeMap from "./data/place/map.json";
+import stateMap from "../data/state/map.json";
+import districtMap from "../data/district/map.json";
+import placeMap from "../data/place/map.json";
 
 class State {
     id = 0

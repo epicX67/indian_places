@@ -1,9 +1,9 @@
 {
   "name": "india_places",
-  "version": "1.0.2",
+  "version": "1.0.12",
   "description": "List of recognizable indian places including pincode",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
   "scripts": {
     "build": "tsc -p .",
     "dev": "tsc --resolveJsonModule --esModuleInterop src/index.ts && node src/index.js",
