@@ -1,15 +1,15 @@
-# India Places
+# Indian Places
 
 List of india places including pincode.
 
 ### Installation
 
-    npm i india_places
+    npm i indian_places
 
 ## Example
 
 ```javascript
-const ip = require("india_places");
+const ip = require("indian_places");
 
 // To get the states
 let states = ip.get_states();
