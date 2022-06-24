@@ -31,7 +31,7 @@ const places = ip.get_places_by_pin(743271);
 
 ## Functions
 
-To get place data, package contains essential functions which will help you to retrive exact place from mapped data. I described littlebit about object types below.
+To get place data, package contains essential functions which will help you to retrive exact place from mapped data. I described little bit about object types below.
 
 | func()                   | parameter            | returns                   |
 | ------------------------ | -------------------- | ------------------------- |
