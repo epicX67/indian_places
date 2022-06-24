@@ -12,21 +12,21 @@ List of india places including pincode.
 const ip = require("indian_places");
 
 // To get the states
-let states = ip.get_states();
+const states = ip.get_states();
 
 // To get the district of a state
-let west_bengal = states.filter((item) => item.name === "West Bengal")[0];
-let districts_of_wb = west_bengal.get_districts();
+const west_bengal = states.find((item) => item.name === "West Bengal");
+const districts_of_wb = west_bengal.get_districts();
 
 // To get places of a specific district
-let north_24_pgs = districts_of_wb.filter(
+const north_24_pgs = districts_of_wb.find(
   (item) => item.name === "North 24 parganas"
-)[0];
-let places = north_24_pgs.get_places();
+);
+const places = north_24_pgs.get_places();
 
 // To get places by pincode
 // This function will return empty array if that pincode doesn't exists
-let places = ip.get_places_by_pin(743271);
+const places = ip.get_places_by_pin(743271);
 ```
 
 ## Functions
