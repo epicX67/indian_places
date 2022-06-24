@@ -1,6 +1,6 @@
 # Indian Places
 
-List of india places including pincode.
+List of india places including pincode. [Demo](https://epicx67.github.io/indian_places_demo/)
 
 ### Installation
 
@@ -39,10 +39,6 @@ To get place data, package contains essential functions which will help you to r
 | get_districts_by_state() | **State** - obj      | Array of **District** Obj |
 | get_places_by_district() | **District** - obj   | Array of **Place** Obj    |
 | get_places_by_pin()      | **pincode** - number | Array of State Obj        |
-
-## Demo
-
-Coming soon :)
 
 ## Objects
 
