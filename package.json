@@ -4,6 +4,9 @@
   "description": "List of recognizable indian places including pincode",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "tsc -p .",
     "dev": "tsc --resolveJsonModule --esModuleInterop src/index.ts && node src/index.js",
