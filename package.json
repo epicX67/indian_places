@@ -1,6 +1,6 @@
 {
   "name": "indian_places",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "List of recognizable indian places including pincode",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
@@ -36,5 +36,8 @@
     "jsdoc": "^3.6.10",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "lz-string": "^1.4.4"
   }
 }

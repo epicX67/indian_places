@@ -1,6 +1,8 @@
+import lzString from "lz-string"
 import stateMap from "../data/state/map.json";
 import districtMap from "../data/district/map.json";
-import placeMap from "../data/place/map.json";
+import compressedMap from "../data/place/compressed_map.json";
+const placeMap = JSON.parse(lzString.decompressFromBase64(compressedMap["data"]))
 
 class State {
     id = 0
