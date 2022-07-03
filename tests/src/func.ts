@@ -1,17 +1,17 @@
 const IP = require("../../src/index");
 
-export const test_place = (state_name:string, district_name:string|null = null, place_name:string|null = null) => {
-  let states = IP.get_states();
+export const testPlace = (state_name:string, district_name:string|null = null, place_name:string|null = null) => {
+  let states = IP.getStates();
   for (let state of states) {
     if (state.name === state_name) {
       if (district_name === null) return true
 
-      const districts = state.get_districts();
+      const districts = state.getDistricts();
       for (let district of districts) {
         if (district.name === district_name) {
           if (place_name === null) return true;
 
-          let places = district.get_places();
+          let places = district.getPlaces();
           for (let place of places) {
             if (place.name === place_name) return true;
           }
@@ -25,7 +25,7 @@ export const test_place = (state_name:string, district_name:string|null = null, 
   return false;
 }
 
-export const test_pin = (pin:number) => {
-  let places = IP.get_places_by_pin(pin)
+export const testPin = (pin:number) => {
+  let places = IP.getPlacesByPin(pin)
   return places.length > 0 ? true : false
 }

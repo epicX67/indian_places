@@ -12,50 +12,50 @@ List of india places including pincode. [Demo](https://epicx67.github.io/indian_
 const ip = require("indian_places");
 
 // To get the states
-const states = ip.get_states();
+const states = ip.getStates();
 
 // To get the district of a state
-const west_bengal = states.find((item) => item.name === "West Bengal");
-const districts_of_wb = west_bengal.get_districts();
+const westBengal = states.find((item) => item.name === "West Bengal");
+const districtsOfWb = westBengal.getDistricts();
 
 // To get places of a specific district
-const north_24_pgs = districts_of_wb.find(
+const north24Pgs = districtsOfWb.find(
   (item) => item.name === "North 24 parganas"
 );
-const places = north_24_pgs.get_places();
+const places = north24Pgs.getPlaces();
 
 // To get places by pincode
 // This function will return empty array if that pincode doesn't exists
-const places = ip.get_places_by_pin(743271);
+const places = ip.getPlacesByPin(743271);
 ```
 
 ## Functions
 
 To get place data, package contains essential functions which will help you to retrive exact place from mapped data. I described little bit about object types below.
 
-| func()                   | parameter            | returns                   |
-| ------------------------ | -------------------- | ------------------------- |
-| get_states()             | None                 | Array of **State** Obj    |
-| get_districts_by_state() | **State** - obj      | Array of **District** Obj |
-| get_places_by_district() | **District** - obj   | Array of **Place** Obj    |
-| get_places_by_pin()      | **pincode** - number | Array of State Obj        |
+| func()                  | parameter            | returns                   |
+| ----------------------- | -------------------- | ------------------------- |
+| getStates()             | None                 | Array of **State** Obj    |
+| getDistricts_by_state() | **State** - obj      | Array of **District** Obj |
+| getPlaces_by_district() | **District** - obj   | Array of **Place** Obj    |
+| getPlacesByPin()        | **pincode** - number | Array of State Obj        |
 
 ## Objects
 
 #### State Object
 
-| member          | description                           |
-| --------------- | ------------------------------------- |
-| name            | State name                            |
-| get_districts() | Method to get districts of that state |
+| member         | description                           |
+| -------------- | ------------------------------------- |
+| name           | State name                            |
+| getDistricts() | Method to get districts of that state |
 
 #### District Object
 
-| member       | description                           |
-| ------------ | ------------------------------------- |
-| name         | District name                         |
-| state        | State name of that district           |
-| get_places() | Method to get places of that district |
+| member      | description                           |
+| ----------- | ------------------------------------- |
+| name        | District name                         |
+| state       | State name of that district           |
+| getPlaces() | Method to get places of that district |
 
 #### Place Object
 

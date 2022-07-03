@@ -12,7 +12,7 @@ class State {
         this.name = name
     }
 
-    get_districts = () => get_districts_by_state(this)
+    getDistricts = () => getDistrictsByState(this)
 }
 
 class District {
@@ -25,7 +25,7 @@ class District {
         this.state = state
     }
 
-    get_places = () => get_places_by_district(this)
+    getPlaces = () => getPlacesByDistrict(this)
 }
 
 /**
@@ -46,7 +46,7 @@ interface Place {
  * To get all the states of India
  * @returns {Array<State>} this will return array of State obj
  */
-export const get_states = ():State[] => {
+export const getStates = ():State[] => {
     let ret = []
     for (let key in stateMap) {
         ret.push(new State(key, stateMap[key]))
@@ -60,7 +60,7 @@ export const get_states = ():State[] => {
  * @param {State} state - State obj
  * @returns {Array<District>} this will return array of District obj
  */
-export const get_districts_by_state = (state:State):District[] => {
+export const getDistrictsByState = (state:State):District[] => {
     let ret = []
     for (let key in districtMap) {
         if (districtMap[key].s == state.id) {
@@ -76,7 +76,7 @@ export const get_districts_by_state = (state:State):District[] => {
  * @param {District} district - District obj
  * @returns {Array<Place>} this will return array of Place obj
  */
-export const get_places_by_district = (district:District):Place[] => {
+export const getPlacesByDistrict = (district:District):Place[] => {
     let ret = []
     for (let pin in placeMap) {
         placeMap[pin].forEach((item) => {
@@ -98,7 +98,7 @@ export const get_places_by_district = (district:District):Place[] => {
  * @param {number} pincode - pincode of the place
  * @returns {Array<Place>} this will return array of Place obj
  */
-export const get_places_by_pin = (pin:number):Place[] => {
+export const getPlacesByPin = (pin:number):Place[] => {
     const places:[any] = placeMap.hasOwnProperty(pin.toString()) ? placeMap[pin.toString()] : [];
     let ret:any = []
 
