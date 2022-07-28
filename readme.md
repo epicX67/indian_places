@@ -36,8 +36,8 @@ To get place data, package contains essential functions which will help you to r
 | func()                  | parameter            | returns                   |
 | ----------------------- | -------------------- | ------------------------- |
 | getStates()             | None                 | Array of **State** Obj    |
-| getDistricts_by_state() | **State** - obj      | Array of **District** Obj |
-| getPlaces_by_district() | **District** - obj   | Array of **Place** Obj    |
+| getDistrictsByState()   | **State** - obj      | Array of **District** Obj |
+| getPlacesByDistrict()   | **District** - obj   | Array of **Place** Obj    |
 | getPlacesByPin()        | **pincode** - number | Array of State Obj        |
 
 ## Objects
